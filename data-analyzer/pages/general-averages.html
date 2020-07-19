@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="\data-analyzer\styling\general-averages-styling.css">
+    <link rel="stylesheet" href="\data-analyzer\styling\dock.css">
+    <script src="\data-analyzer\scripts\dictonary.js"></script>
+    <script src="\data-analyzer\scripts\general-averages-functions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li><img src="\data-analyzer\resources\dataLogo.png" alt="logo" width="98" height="48"></li>
+        <li><a href="\data-analyzer\pages\home.html"> בית</a></li>
+        <li><a href="\data-analyzer\pages\general-averages.html"> ממוצעים כללים </a></li>
+        <li><a href="\data-analyzer\pages\specific-student.html">ניתוח תלמיד יחיד</a></li>
+    </ul>
+    <a id=dummy_download>
+
+    <form id="inputData">
+        <label for="studentsInput" style="color: white" class="question">&nbsp;?כמה תלמידים לומדים בכיתה</label>
+        <input autofocus type="number" class="question" name="students" min="1" id="studentsNum">
+        <br><br>
+        <label for="studentsInput" style="color: white" class="question">&nbsp;?כמה נושאים כל אחד מהם לומד</label>
+        <input type="number" class="question" name="subjects" min="1" max="11"id="subjectsNum">
+        <br><br> 
+        <button type="button" onclick="dataEnter(studentsNum.value,subjectsNum.value)" class="question">שלח</button>
+        
+    </form>
+</body>
+</html>
